@@ -1,6 +1,57 @@
 <br>
 <div class="ui secondary menu">
-    <div class="header item"><img src="/logo.png" style="width: 100px"></div>
+    <div class="header item">
+<div class="glow">
+<style="" type="text/css"> 
+      <!-- .style2 {font-size: small} .style4 {color: #FFAA00; font-weight: bold; } .style5 {color: #FFFFFF} .style8 {color: #FFFFFF; font-weight: bold; } .style10 {color: #0080ff } --> <font color="#008000"> <style>
+body {
+background: #000;
+font-family: "Tahoma", Verdana, sans-serif;
+}
+h1 {
+color: #333;
+font-size: 45px;
+margin: 1px auto;
+text-align:center;
+text-transform:uppercase;
+}
+.neon {
+color: #FFFFFF ;
+text-shadow: 0 0 3px #FFFFFF , 0 0 5px #FFFFFF , 0 0 11px #0080ff , 0 0 20px #FFFFFF , 0 0 18px #FFFFFF ;
+}
+<script> language="JavaScript1.2">
+function ClearError() {return true;}
+window.onerror = ClearError;
+</script>
+
+</style>   <script>
+window.onload = function() {
+var h1 = document.getElementsByTagName("h1")[0],
+text = h1.innerText || h1.textContent,
+split = [], i, lit = 0, timer = null;
+for(i = 0; i < text.length; ++i) {
+split.push("<span>" + text[i] + "</span>");
+}
+h1.innerHTML = split.join("");
+split = h1.childNodes;
+
+var flicker = function() {
+lit += 0.01;
+if(lit >= 1) {
+clearInterval(timer);
+}
+for(i = 0; i < split.length; ++i) {
+if(Math.random() < lit) {
+split[i].className = "neon";
+} else {
+split[i].className = "";
+}
+}
+}
+setInterval(flicker, 100);
+}
+</script> </font> <br> <br> <h1><span>B</span><span>a</span><span>n</span><span>g</span><span>l</span><span>a</span><span>d</span><span>e</span><span>s</span><span>h</span><span> </span><span>C</span><span>y</span><span>b</span><span>e</span><span>r</span><span> </span><span>W</span><span>a</span><span>r</span><span>r</span><span>i</span><span>o</span><span>r</span><span>s</span><span></span><span></span><span></span></h1>
+</div>
     <a href="/panel" class="item">
         <i class="icon mobile alternate"></i>&nbsp;&nbsp; Devices
     </a>
